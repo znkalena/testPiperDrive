@@ -1,0 +1,16 @@
+.main__header{
+    height: 60px;   
+}
+.main__aside{
+    width: 25%;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.details__item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;    
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" type="module"></script>
+</head>
+<body>
+    <main class="body__main">
+        <div class="container">
+    <header class="main__header"></header>
+    <aside class="main__aside">
+    <button class="create__job" type="button">New create a job</button>
+    <div class="details">        
+        <div class="details__item">
+            <span class="details__adress--span"></span>
+            <p class="details__adress--adress"></p>
+        </div>
+        <div class="details__item">
+            <span class="details__name--span"></span>
+            <p class="details__name--name"></p>
+        </div>
+        <div class="details__item">
+            <span class="details__type--span"></span>
+            <p class="details__type--type"></p>
+        </div>
+    </div>
+    </aside>
+    
+    <form action="" class="form popup">
+        <div class="form__container">
+    <fieldset class="form__fieldset form__fieldset--user">
+        <h3 class="form__title">Client details</h3>
+        <legend class="form__legent"></legend>
+        <div class="form__input-wrapper">
+            <input class="form__input input__wrapper  inputs" type="text" name ="name" 
+            placeholder="First name" required min="3" max="20">
+            <input class="form__input inputs" type="text" name ="lastname" 
+            placeholder="Last name" required min="3" max="20">
+            <input class="form__input form__input--big inputs" type="phone" name ="phone" 
+            placeholder="Phone" required min="3" max="20" id="phone">            
+            <input class="form__input form__input--big inputs" type="email" 
+            name ="email" 
+            placeholder="Email(optional)" required min="3" max="20">
+        </div>        
+    </fieldset>
+    <fieldset class="form__fieldset form__fieldset--job">
+        <h3 class="form__title">Job details</h3>
+        <legend class="form__legent"></legend>
+        <div class="form__input-wrapper">
+            <div class="input__wrapper">
+            <label for="job">Job type</label>
+            <select class="form__select inputs" name="jobtype" id="job" required>
+                <option value="" disabled selected hidden></option>
+                <option value="job-one">Job one</option>
+                <option value="job-two">Job two</option>
+            </select>
+            </div>
+            <div class="input__wrapper">
+                <label for="source">Job source</label>
+            <select class="form__select inputs" name="jobsource" id="source" required>
+                <option value="" disabled selected hidden></option>
+                <option value="source-one">Source one</option>
+                <option value="source-two">Source two</option>
+            </select>
+            </div>
+            <textarea class="form__textarea" name="job-description" id="jobdescription"
+            cols="30" rows="5" 
+            placeholder="Job description(optional)"></textarea>
+        </div>        
+    </fieldset>
+    <fieldset class="form__fieldset form__fieldset--location">
+        <h3 class="form__title">Service location</h3>
+        <legend class="form__legent"></legend>
+        <div class="form__input-wrapper">
+            <input class="form__input form__input--big inputs" id="address"
+                type="text" name ="address" placeholder="Address" required>
+            <input class="form__input form__input--big inputs"
+                type="text" name ="city" placeholder="City" required>
+            <input class="form__input form__input--big inputs"
+                type="text" name ="state" placeholder="State" required>            
+            <input class="form__input inputs" type="text" name ="zip" 
+            placeholder="Zip code" required>
+            <div class="input__wrapper">
+                <label for="area">Area</label>
+            <select name="area" id="area" class="form__select inputs">
+                <option value="" disabled selected hidden></option>
+                <option value="area2">area2</option>
+                <option value="area3">area3</option>
+            </select>
+            </div> 
+        </div>        
+    </fieldset>
+    <fieldset class="form__fieldset form__fieldset--scheduled">
+        <h3 class="form__title">Scheduled</h3>
+        <legend class="form__legent"></legend>
+        <div class="form__input-wrapper">
+            <div class="input__wrapper form__input form__input--big">
+            <label for="start">Start date</label>            
+            <input class="selector__sheduled inputs" 
+            type="date" id="start" name="trip-start"
+            min="2018-01-01" max="2024-02-02" value="2024-02-02" required/> 
+            </div> 
+            <div class="input__wrapper form__input">
+            <label for="appt">Start time</label>           
+            <input class="selector__sheduled inputs" type="time" id="appt" 
+            name="appt" min="01:00" max="24:00" required/>
+            </div>
+            <div class="input__wrapper form__input">
+            <label for="endt">End time</label>              
+            <input class="selector__sheduled inputs" type="time" id="endt" 
+            name="endt" min="01:00" max="24:00" required/>
+            </div>
+            <div class="input__wrapper input__wrapper--scheduled">
+                <label for="test">Test select</label>
+            <select  name="test" id="test" class="form__select inputs">
+                <option value="" disabled selected hidden></option>
+                <option value="test1">test1</option>
+                <option value="test2">test2</option>
+            </select>
+            </div>
+        </div>        
+    </fieldset>
+    </div>
+    <div class="btn__wrapper">
+        <button type="submit"  class="form__btn form__btn--submit">Create job</button>
+        <button type="button"  class="form__btn form__btn--save">Save info</button>
+    </div>    
+</form>
+<footer class="main__footer">
+    
+</footer>
+</div>
+</main>
+</body>
+</html>
